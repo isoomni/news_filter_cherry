@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+
+    "name": "NewsFilter",
+    "description": "Filter comments or headline of the news",
+    "version": "1.0",
+
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab",
+        "*://*/*",
+        "storage"
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent" : false
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.naver.com/*"],
+            "run_at": "document_idle",
+            "js": ["contentScript.js"]
+        }
+      ]
+}

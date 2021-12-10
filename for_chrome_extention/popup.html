@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <script defer src="/popup.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>맞춤형 뉴스 필터</h1>
+    <section class="hatred__filter">
+        <div class="category">
+            <img src="/circle.png" class="circle" alt="">
+            <label for="hatred">
+                혐오 필터
+            </label>
+        </div>
+        <select id="hatred">
+            <option value="">--선택하세요--</option>
+            <option value="DPK">문재인/민주당 혐오</option>
+            <option value="LKP">박근혜/자한당 혐오</option>
+            <option value="Region">지역혐오</option>
+            <option value="Gender">젠더혐오</option>
+        </select>
+    </section>
+    <section class="trauma__filter">
+        <div class="category">
+            <img src="/circle.png" class="circle" alt="">
+            <label for="trauma">트라우마 필터</label>
+        </div>
+        <select id="trauma">
+            <option value="">--선택하세요--</option>
+            <option value="COVID-19">코로나</option>
+            <option value="SewolFerry">세월호</option>
+            <option value="NorthProvocations">북한도발</option>
+            <option value="BrutalCrime">흉악범죄</option>
+        </select>
+    </section>
+</body>
+
+</html>
